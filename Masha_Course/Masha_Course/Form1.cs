@@ -12,9 +12,10 @@ namespace Masha_Course {
     public partial class Form1 : Form {
         public Form1() {
             InitializeComponent();
+            requester.FillPositions(factory, comboEmpPos);
         }
         Request requester = new Request();
-        Factory factory = new Factory("127.0.0.1", "5432", "postgres", "1", "fitness");
+        Factory factory = new Factory("127.0.0.1", "5432", "postgres", "1", "masha");
         private void BtnCreateClient_Click(object sender, EventArgs e) {
             requester.Create_Client();
         }
@@ -23,7 +24,7 @@ namespace Masha_Course {
             fillDgvClient();
             requester.Show_Client(factory, dgvShowClients);
         }
-
+        
         #region Filler
         public void fillDgvClient() {
             dgvShowClients.Columns.Clear();
@@ -37,5 +38,12 @@ namespace Masha_Course {
 
 
         #endregion
+
+        private void btnEmpCreate_Click(object sender, EventArgs e) {
+            requester.Create_Employee(factory, tbEmpPass.Text,
+                tbEmpFname.Text, tbEmpLname.Text, tbEmpPatr.Text, tbEmpPhone.Text,
+                tbEmpMail.Text, comboEmpPos.SelectedItem.ToString(), dateEmpIss.Value.ToShortDateString(),
+                dateEmpExp.Value.ToShortDateString(), tbEmpService.Text);
+        }
     }
 }

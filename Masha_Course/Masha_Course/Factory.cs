@@ -11,16 +11,20 @@ namespace Masha_Course {
     class Factory : IDisposable {
         public NpgsqlConnection NpgsqlConnection;
         public Connection connection;
+              
+        public ReposClient client { get; }
+        public ReposPositions positions { get; }
+        public ReposEmployee employee { get; }
 
-        public ReposClient cli { private get; set; }
-        public ReposClient client => cli;
 
         public Factory(string server, string port, string user, string pass, string dbname) {
             string ConnectionString = "Server=" + server + "; Port=" + port + "; User Id=" + user + "; Password=" + pass + "; Database=" + dbname + ";";
             NpgsqlConnection = new NpgsqlConnection(ConnectionString);
             connection = new Connection(NpgsqlConnection);
             OpenConnection();
-            cli = new ReposClient(connection);
+            client = new ReposClient(connection);
+            positions = new ReposPositions(connection);
+            employee = new ReposEmployee(connection);
         }
 
         private bool Disposed = false;
