@@ -80,7 +80,17 @@ namespace Masha_Course.Repos {
         }
 
         public void FreeEmployee (string emp_id) {
-
+            try {
+                string QueryString =
+                    "select lay_off_employee(@id);";
+                NpgsqlCommand Command = new NpgsqlCommand
+                    (QueryString, connection.CreateConnection.connection);
+                Command.Parameters.AddWithValue("@id", Convert.ToInt32(emp_id));
+                Command.ExecuteNonQuery();
+            }
+            catch (Exception ex) {
+                MessageBox.Show("Ошибка выполнения операции. \n Проверьте корректность введенных данных" + ex.ToString());
+            }
         }
     }
 }

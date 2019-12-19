@@ -90,10 +90,18 @@
     <Compile Include="Repos\ReposClient.cs" />
     <Compile Include="Repos\ReposEmployee.cs" />
     <Compile Include="Repos\ReposPositions.cs" />
+    <Compile Include="Repos\ReposSchedule.cs" />
+    <Compile Include="Repos\ReposService.cs" />
+    <Compile Include="Repos\ReposSubscription.cs" />
+    <Compile Include="Repos\ReposSubType.cs" />
     <Compile Include="Request.cs" />
     <Compile Include="Tables\Client.cs" />
     <Compile Include="Tables\Employee.cs" />
     <Compile Include="Tables\Positions.cs" />
+    <Compile Include="Tables\Schedule.cs" />
+    <Compile Include="Tables\Service.cs" />
+    <Compile Include="Tables\Subscription.cs" />
+    <Compile Include="Tables\SubType.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

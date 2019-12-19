@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Masha_Course.Tables {
+    class SubType {
+        public string Type { get; }
+        public SubType(string type) {
+            Type = type;
+        }
+    }
+}

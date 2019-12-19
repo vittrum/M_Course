@@ -15,7 +15,10 @@ namespace Masha_Course {
         public ReposClient client { get; }
         public ReposPositions positions { get; }
         public ReposEmployee employee { get; }
-
+        public ReposService service { get; }
+        public ReposSubType type { get; }
+        public ReposSubscription sub { get; }
+        public ReposSchedule schedule { get; }
 
         public Factory(string server, string port, string user, string pass, string dbname) {
             string ConnectionString = "Server=" + server + "; Port=" + port + "; User Id=" + user + "; Password=" + pass + "; Database=" + dbname + ";";
@@ -25,6 +28,10 @@ namespace Masha_Course {
             client = new ReposClient(connection);
             positions = new ReposPositions(connection);
             employee = new ReposEmployee(connection);
+            service = new ReposService(connection);
+            type = new ReposSubType(connection);
+            sub = new ReposSubscription(connection);
+            schedule = new ReposSchedule(connection);
         }
 
         private bool Disposed = false;

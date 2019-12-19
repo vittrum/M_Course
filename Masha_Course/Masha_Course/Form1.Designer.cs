@@ -31,22 +31,45 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabStaffClient = new System.Windows.Forms.TabPage();
+            this.btnShowClients = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.dgvShowClients = new System.Windows.Forms.DataGridView();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.btnCreateSub = new System.Windows.Forms.Button();
+            this.comboSubType = new System.Windows.Forms.ComboBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.dateSubExp = new System.Windows.Forms.DateTimePicker();
+            this.dateSubIss = new System.Windows.Forms.DateTimePicker();
+            this.tbSubCliId = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.tbName = new System.Windows.Forms.TextBox();
             this.btnCreateClient = new System.Windows.Forms.Button();
+            this.tbEmail = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.tbNumber = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.tbPatr = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.rbLastName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.rbLastName = new System.Windows.Forms.TextBox();
-            this.tbPatr = new System.Windows.Forms.TextBox();
-            this.tbNumber = new System.Windows.Forms.TextBox();
-            this.tbEmail = new System.Windows.Forms.TextBox();
-            this.tbName = new System.Windows.Forms.TextBox();
             this.tabTrainer = new System.Windows.Forms.TabPage();
-            this.btnShowClients = new System.Windows.Forms.Button();
-            this.dgvShowClients = new System.Windows.Forms.DataGridView();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.bnShowSchedule = new System.Windows.Forms.Button();
+            this.dgvShowSchedule = new System.Windows.Forms.DataGridView();
             this.tabAdmin = new System.Windows.Forms.TabPage();
+            this.btnFireEmp = new System.Windows.Forms.Button();
+            this.btnShowEmp = new System.Windows.Forms.Button();
+            this.dgvShowEmployee = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.tbEmpId = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.btnAddServ = new System.Windows.Forms.Button();
+            this.tbServName = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnEmpCreate = new System.Windows.Forms.Button();
             this.dateEmpExp = new System.Windows.Forms.DateTimePicker();
@@ -70,13 +93,35 @@
             this.tbEmpLname = new System.Windows.Forms.TextBox();
             this.tbEmpFname = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.tbSchedService = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.btnCreateSchedule = new System.Windows.Forms.Button();
+            this.dateSchedDay = new System.Windows.Forms.DateTimePicker();
+            this.dateSchedStime = new System.Windows.Forms.DateTimePicker();
+            this.dateSchedEtime = new System.Windows.Forms.DateTimePicker();
+            this.label25 = new System.Windows.Forms.Label();
+            this.tbSchedClient = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.tbSchedRoom = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabLogin.SuspendLayout();
             this.tabStaffClient.SuspendLayout();
-            this.tabTrainer.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvShowClients)).BeginInit();
+            this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.tabTrainer.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvShowSchedule)).BeginInit();
             this.tabAdmin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvShowEmployee)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox7.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -104,7 +149,7 @@
             this.tabLogin.Margin = new System.Windows.Forms.Padding(2);
             this.tabLogin.Name = "tabLogin";
             this.tabLogin.Padding = new System.Windows.Forms.Padding(2);
-            this.tabLogin.Size = new System.Drawing.Size(776, 466);
+            this.tabLogin.Size = new System.Drawing.Size(951, 583);
             this.tabLogin.TabIndex = 0;
             this.tabLogin.Text = "Login";
             this.tabLogin.UseVisualStyleBackColor = true;
@@ -157,29 +202,178 @@
             // 
             // tabStaffClient
             // 
-            this.tabStaffClient.Controls.Add(this.btnCreateClient);
-            this.tabStaffClient.Controls.Add(this.label8);
-            this.tabStaffClient.Controls.Add(this.label7);
-            this.tabStaffClient.Controls.Add(this.label6);
-            this.tabStaffClient.Controls.Add(this.label5);
-            this.tabStaffClient.Controls.Add(this.label4);
-            this.tabStaffClient.Controls.Add(this.rbLastName);
-            this.tabStaffClient.Controls.Add(this.tbPatr);
-            this.tabStaffClient.Controls.Add(this.tbNumber);
-            this.tabStaffClient.Controls.Add(this.tbEmail);
-            this.tabStaffClient.Controls.Add(this.tbName);
+            this.tabStaffClient.Controls.Add(this.btnShowClients);
+            this.tabStaffClient.Controls.Add(this.groupBox5);
+            this.tabStaffClient.Controls.Add(this.groupBox4);
+            this.tabStaffClient.Controls.Add(this.groupBox3);
             this.tabStaffClient.Location = new System.Drawing.Point(4, 22);
             this.tabStaffClient.Margin = new System.Windows.Forms.Padding(2);
             this.tabStaffClient.Name = "tabStaffClient";
             this.tabStaffClient.Padding = new System.Windows.Forms.Padding(2);
-            this.tabStaffClient.Size = new System.Drawing.Size(776, 466);
+            this.tabStaffClient.Size = new System.Drawing.Size(951, 583);
             this.tabStaffClient.TabIndex = 1;
-            this.tabStaffClient.Text = "Register client";
+            this.tabStaffClient.Text = "Client";
             this.tabStaffClient.UseVisualStyleBackColor = true;
+            // 
+            // btnShowClients
+            // 
+            this.btnShowClients.Location = new System.Drawing.Point(692, 509);
+            this.btnShowClients.Margin = new System.Windows.Forms.Padding(2);
+            this.btnShowClients.Name = "btnShowClients";
+            this.btnShowClients.Size = new System.Drawing.Size(185, 34);
+            this.btnShowClients.TabIndex = 14;
+            this.btnShowClients.Text = "Показать";
+            this.btnShowClients.UseVisualStyleBackColor = true;
+            this.btnShowClients.Click += new System.EventHandler(this.btnShowClients_Click_1);
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.dgvShowClients);
+            this.groupBox5.Location = new System.Drawing.Point(6, 280);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(672, 269);
+            this.groupBox5.TabIndex = 13;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Show";
+            // 
+            // dgvShowClients
+            // 
+            this.dgvShowClients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvShowClients.Location = new System.Drawing.Point(6, 19);
+            this.dgvShowClients.Name = "dgvShowClients";
+            this.dgvShowClients.Size = new System.Drawing.Size(660, 244);
+            this.dgvShowClients.TabIndex = 8;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.btnCreateSub);
+            this.groupBox4.Controls.Add(this.comboSubType);
+            this.groupBox4.Controls.Add(this.label23);
+            this.groupBox4.Controls.Add(this.label22);
+            this.groupBox4.Controls.Add(this.label21);
+            this.groupBox4.Controls.Add(this.dateSubExp);
+            this.groupBox4.Controls.Add(this.dateSubIss);
+            this.groupBox4.Controls.Add(this.tbSubCliId);
+            this.groupBox4.Controls.Add(this.label20);
+            this.groupBox4.Location = new System.Drawing.Point(345, 5);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(333, 269);
+            this.groupBox4.TabIndex = 12;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Subscription";
+            // 
+            // btnCreateSub
+            // 
+            this.btnCreateSub.Location = new System.Drawing.Point(85, 155);
+            this.btnCreateSub.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCreateSub.Name = "btnCreateSub";
+            this.btnCreateSub.Size = new System.Drawing.Size(185, 34);
+            this.btnCreateSub.TabIndex = 15;
+            this.btnCreateSub.Text = "Заключить";
+            this.btnCreateSub.UseVisualStyleBackColor = true;
+            this.btnCreateSub.Click += new System.EventHandler(this.btnCreateSub_Click);
+            // 
+            // comboSubType
+            // 
+            this.comboSubType.FormattingEnabled = true;
+            this.comboSubType.Location = new System.Drawing.Point(85, 63);
+            this.comboSubType.Name = "comboSubType";
+            this.comboSubType.Size = new System.Drawing.Size(125, 21);
+            this.comboSubType.TabIndex = 13;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(20, 66);
+            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(31, 13);
+            this.label23.TabIndex = 12;
+            this.label23.Text = "Type";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(20, 96);
+            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(57, 13);
+            this.label22.TabIndex = 11;
+            this.label22.Text = "Date issue";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(20, 125);
+            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(50, 13);
+            this.label21.TabIndex = 10;
+            this.label21.Text = "Date exp";
+            // 
+            // dateSubExp
+            // 
+            this.dateSubExp.Location = new System.Drawing.Point(85, 119);
+            this.dateSubExp.Name = "dateSubExp";
+            this.dateSubExp.Size = new System.Drawing.Size(200, 20);
+            this.dateSubExp.TabIndex = 9;
+            // 
+            // dateSubIss
+            // 
+            this.dateSubIss.Location = new System.Drawing.Point(85, 90);
+            this.dateSubIss.Name = "dateSubIss";
+            this.dateSubIss.Size = new System.Drawing.Size(200, 20);
+            this.dateSubIss.TabIndex = 8;
+            // 
+            // tbSubCliId
+            // 
+            this.tbSubCliId.Location = new System.Drawing.Point(85, 33);
+            this.tbSubCliId.Margin = new System.Windows.Forms.Padding(2);
+            this.tbSubCliId.Name = "tbSubCliId";
+            this.tbSubCliId.Size = new System.Drawing.Size(125, 20);
+            this.tbSubCliId.TabIndex = 6;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(20, 33);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(44, 13);
+            this.label20.TabIndex = 7;
+            this.label20.Text = "Client id";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.tbName);
+            this.groupBox3.Controls.Add(this.btnCreateClient);
+            this.groupBox3.Controls.Add(this.tbEmail);
+            this.groupBox3.Controls.Add(this.label8);
+            this.groupBox3.Controls.Add(this.tbNumber);
+            this.groupBox3.Controls.Add(this.label7);
+            this.groupBox3.Controls.Add(this.tbPatr);
+            this.groupBox3.Controls.Add(this.label6);
+            this.groupBox3.Controls.Add(this.rbLastName);
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Location = new System.Drawing.Point(5, 5);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(334, 269);
+            this.groupBox3.TabIndex = 11;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Registration";
+            // 
+            // tbName
+            // 
+            this.tbName.Location = new System.Drawing.Point(116, 40);
+            this.tbName.Margin = new System.Windows.Forms.Padding(2);
+            this.tbName.Name = "tbName";
+            this.tbName.Size = new System.Drawing.Size(125, 20);
+            this.tbName.TabIndex = 0;
             // 
             // btnCreateClient
             // 
-            this.btnCreateClient.Location = new System.Drawing.Point(24, 223);
+            this.btnCreateClient.Location = new System.Drawing.Point(47, 227);
             this.btnCreateClient.Margin = new System.Windows.Forms.Padding(2);
             this.btnCreateClient.Name = "btnCreateClient";
             this.btnCreateClient.Size = new System.Drawing.Size(193, 28);
@@ -188,40 +382,72 @@
             this.btnCreateClient.UseVisualStyleBackColor = true;
             this.btnCreateClient.Click += new System.EventHandler(this.BtnCreateClient_Click);
             // 
+            // tbEmail
+            // 
+            this.tbEmail.Location = new System.Drawing.Point(116, 191);
+            this.tbEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.Size = new System.Drawing.Size(125, 20);
+            this.tbEmail.TabIndex = 1;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(28, 73);
+            this.label8.Location = new System.Drawing.Point(51, 77);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(53, 13);
             this.label8.TabIndex = 9;
             this.label8.Text = "Lastname";
             // 
+            // tbNumber
+            // 
+            this.tbNumber.Location = new System.Drawing.Point(116, 155);
+            this.tbNumber.Margin = new System.Windows.Forms.Padding(2);
+            this.tbNumber.Name = "tbNumber";
+            this.tbNumber.Size = new System.Drawing.Size(125, 20);
+            this.tbNumber.TabIndex = 2;
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(28, 115);
+            this.label7.Location = new System.Drawing.Point(51, 119);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(59, 13);
             this.label7.TabIndex = 8;
             this.label7.Text = "Patronymic";
             // 
+            // tbPatr
+            // 
+            this.tbPatr.Location = new System.Drawing.Point(116, 115);
+            this.tbPatr.Margin = new System.Windows.Forms.Padding(2);
+            this.tbPatr.Name = "tbPatr";
+            this.tbPatr.Size = new System.Drawing.Size(125, 20);
+            this.tbPatr.TabIndex = 3;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(28, 155);
+            this.label6.Location = new System.Drawing.Point(51, 159);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 13);
             this.label6.TabIndex = 7;
             this.label6.Text = "Number";
             // 
+            // rbLastName
+            // 
+            this.rbLastName.Location = new System.Drawing.Point(116, 77);
+            this.rbLastName.Margin = new System.Windows.Forms.Padding(2);
+            this.rbLastName.Name = "rbLastName";
+            this.rbLastName.Size = new System.Drawing.Size(125, 20);
+            this.rbLastName.TabIndex = 4;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(28, 191);
+            this.label5.Location = new System.Drawing.Point(51, 195);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(36, 13);
@@ -231,90 +457,60 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(28, 36);
+            this.label4.Location = new System.Drawing.Point(51, 40);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 13);
             this.label4.TabIndex = 5;
             this.label4.Text = "Name";
             // 
-            // rbLastName
-            // 
-            this.rbLastName.Location = new System.Drawing.Point(93, 73);
-            this.rbLastName.Margin = new System.Windows.Forms.Padding(2);
-            this.rbLastName.Name = "rbLastName";
-            this.rbLastName.Size = new System.Drawing.Size(125, 20);
-            this.rbLastName.TabIndex = 4;
-            // 
-            // tbPatr
-            // 
-            this.tbPatr.Location = new System.Drawing.Point(93, 111);
-            this.tbPatr.Margin = new System.Windows.Forms.Padding(2);
-            this.tbPatr.Name = "tbPatr";
-            this.tbPatr.Size = new System.Drawing.Size(125, 20);
-            this.tbPatr.TabIndex = 3;
-            // 
-            // tbNumber
-            // 
-            this.tbNumber.Location = new System.Drawing.Point(93, 151);
-            this.tbNumber.Margin = new System.Windows.Forms.Padding(2);
-            this.tbNumber.Name = "tbNumber";
-            this.tbNumber.Size = new System.Drawing.Size(125, 20);
-            this.tbNumber.TabIndex = 2;
-            // 
-            // tbEmail
-            // 
-            this.tbEmail.Location = new System.Drawing.Point(93, 187);
-            this.tbEmail.Margin = new System.Windows.Forms.Padding(2);
-            this.tbEmail.Name = "tbEmail";
-            this.tbEmail.Size = new System.Drawing.Size(125, 20);
-            this.tbEmail.TabIndex = 1;
-            // 
-            // tbName
-            // 
-            this.tbName.Location = new System.Drawing.Point(93, 36);
-            this.tbName.Margin = new System.Windows.Forms.Padding(2);
-            this.tbName.Name = "tbName";
-            this.tbName.Size = new System.Drawing.Size(125, 20);
-            this.tbName.TabIndex = 0;
-            // 
             // tabTrainer
             // 
-            this.tabTrainer.Controls.Add(this.btnShowClients);
-            this.tabTrainer.Controls.Add(this.dgvShowClients);
+            this.tabTrainer.Controls.Add(this.groupBox7);
+            this.tabTrainer.Controls.Add(this.groupBox6);
             this.tabTrainer.Location = new System.Drawing.Point(4, 22);
             this.tabTrainer.Margin = new System.Windows.Forms.Padding(2);
             this.tabTrainer.Name = "tabTrainer";
             this.tabTrainer.Padding = new System.Windows.Forms.Padding(2);
-            this.tabTrainer.Size = new System.Drawing.Size(776, 466);
+            this.tabTrainer.Size = new System.Drawing.Size(951, 583);
             this.tabTrainer.TabIndex = 2;
             this.tabTrainer.Text = "Trainer";
             this.tabTrainer.UseVisualStyleBackColor = true;
             // 
-            // btnShowClients
+            // groupBox6
             // 
-            this.btnShowClients.Location = new System.Drawing.Point(66, 401);
-            this.btnShowClients.Margin = new System.Windows.Forms.Padding(2);
-            this.btnShowClients.Name = "btnShowClients";
-            this.btnShowClients.Size = new System.Drawing.Size(185, 34);
-            this.btnShowClients.TabIndex = 1;
-            this.btnShowClients.Text = "Показать";
-            this.btnShowClients.UseVisualStyleBackColor = true;
-            this.btnShowClients.Click += new System.EventHandler(this.BtnShowClients_Click);
+            this.groupBox6.Controls.Add(this.bnShowSchedule);
+            this.groupBox6.Controls.Add(this.dgvShowSchedule);
+            this.groupBox6.Location = new System.Drawing.Point(5, 5);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(423, 478);
+            this.groupBox6.TabIndex = 1;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Show Shedule";
             // 
-            // dgvShowClients
+            // bnShowSchedule
             // 
-            this.dgvShowClients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvShowClients.Location = new System.Drawing.Point(66, 171);
-            this.dgvShowClients.Margin = new System.Windows.Forms.Padding(2);
-            this.dgvShowClients.Name = "dgvShowClients";
-            this.dgvShowClients.RowHeadersWidth = 51;
-            this.dgvShowClients.RowTemplate.Height = 27;
-            this.dgvShowClients.Size = new System.Drawing.Size(426, 216);
-            this.dgvShowClients.TabIndex = 0;
+            this.bnShowSchedule.Location = new System.Drawing.Point(6, 303);
+            this.bnShowSchedule.Name = "bnShowSchedule";
+            this.bnShowSchedule.Size = new System.Drawing.Size(203, 46);
+            this.bnShowSchedule.TabIndex = 1;
+            this.bnShowSchedule.Text = "Show";
+            this.bnShowSchedule.UseVisualStyleBackColor = true;
+            this.bnShowSchedule.Click += new System.EventHandler(this.bnShowSchedule_Click);
+            // 
+            // dgvShowSchedule
+            // 
+            this.dgvShowSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvShowSchedule.Location = new System.Drawing.Point(6, 19);
+            this.dgvShowSchedule.Name = "dgvShowSchedule";
+            this.dgvShowSchedule.Size = new System.Drawing.Size(411, 278);
+            this.dgvShowSchedule.TabIndex = 0;
             // 
             // tabAdmin
             // 
+            this.tabAdmin.Controls.Add(this.btnFireEmp);
+            this.tabAdmin.Controls.Add(this.btnShowEmp);
+            this.tabAdmin.Controls.Add(this.dgvShowEmployee);
             this.tabAdmin.Controls.Add(this.groupBox2);
             this.tabAdmin.Controls.Add(this.groupBox1);
             this.tabAdmin.Location = new System.Drawing.Point(4, 22);
@@ -326,14 +522,89 @@
             this.tabAdmin.Text = "Admin";
             this.tabAdmin.UseVisualStyleBackColor = true;
             // 
+            // btnFireEmp
+            // 
+            this.btnFireEmp.Location = new System.Drawing.Point(708, 378);
+            this.btnFireEmp.Name = "btnFireEmp";
+            this.btnFireEmp.Size = new System.Drawing.Size(203, 23);
+            this.btnFireEmp.TabIndex = 4;
+            this.btnFireEmp.Text = "Fire";
+            this.btnFireEmp.UseVisualStyleBackColor = true;
+            this.btnFireEmp.Click += new System.EventHandler(this.btnFireEmp_Click);
+            // 
+            // btnShowEmp
+            // 
+            this.btnShowEmp.Location = new System.Drawing.Point(349, 378);
+            this.btnShowEmp.Name = "btnShowEmp";
+            this.btnShowEmp.Size = new System.Drawing.Size(154, 23);
+            this.btnShowEmp.TabIndex = 3;
+            this.btnShowEmp.Text = "Show emp";
+            this.btnShowEmp.UseVisualStyleBackColor = true;
+            this.btnShowEmp.Click += new System.EventHandler(this.btnShowEmp_Click);
+            // 
+            // dgvShowEmployee
+            // 
+            this.dgvShowEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvShowEmployee.Location = new System.Drawing.Point(349, 179);
+            this.dgvShowEmployee.Name = "dgvShowEmployee";
+            this.dgvShowEmployee.Size = new System.Drawing.Size(562, 193);
+            this.dgvShowEmployee.TabIndex = 2;
+            // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label19);
+            this.groupBox2.Controls.Add(this.tbEmpId);
+            this.groupBox2.Controls.Add(this.label18);
+            this.groupBox2.Controls.Add(this.btnAddServ);
+            this.groupBox2.Controls.Add(this.tbServName);
             this.groupBox2.Location = new System.Drawing.Point(349, 5);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(422, 168);
+            this.groupBox2.Size = new System.Drawing.Size(562, 168);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Add service";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(63, 81);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(37, 13);
+            this.label19.TabIndex = 7;
+            this.label19.Text = "EmpId";
+            // 
+            // tbEmpId
+            // 
+            this.tbEmpId.Location = new System.Drawing.Point(124, 78);
+            this.tbEmpId.Name = "tbEmpId";
+            this.tbEmpId.Size = new System.Drawing.Size(100, 20);
+            this.tbEmpId.TabIndex = 6;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(63, 55);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(57, 13);
+            this.label18.TabIndex = 5;
+            this.label18.Text = "ServName";
+            // 
+            // btnAddServ
+            // 
+            this.btnAddServ.Location = new System.Drawing.Point(70, 117);
+            this.btnAddServ.Name = "btnAddServ";
+            this.btnAddServ.Size = new System.Drawing.Size(154, 23);
+            this.btnAddServ.TabIndex = 4;
+            this.btnAddServ.Text = "Add serv";
+            this.btnAddServ.UseVisualStyleBackColor = true;
+            this.btnAddServ.Click += new System.EventHandler(this.btnAddServ_Click);
+            // 
+            // tbServName
+            // 
+            this.tbServName.Location = new System.Drawing.Point(124, 52);
+            this.tbServName.Name = "tbServName";
+            this.tbServName.Size = new System.Drawing.Size(100, 20);
+            this.tbServName.TabIndex = 0;
             // 
             // groupBox1
             // 
@@ -542,10 +813,138 @@
             this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage3.Size = new System.Drawing.Size(776, 466);
+            this.tabPage3.Size = new System.Drawing.Size(951, 583);
             this.tabPage3.TabIndex = 4;
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.label29);
+            this.groupBox7.Controls.Add(this.tbSchedRoom);
+            this.groupBox7.Controls.Add(this.label28);
+            this.groupBox7.Controls.Add(this.label27);
+            this.groupBox7.Controls.Add(this.label26);
+            this.groupBox7.Controls.Add(this.label25);
+            this.groupBox7.Controls.Add(this.tbSchedClient);
+            this.groupBox7.Controls.Add(this.dateSchedEtime);
+            this.groupBox7.Controls.Add(this.dateSchedStime);
+            this.groupBox7.Controls.Add(this.dateSchedDay);
+            this.groupBox7.Controls.Add(this.btnCreateSchedule);
+            this.groupBox7.Controls.Add(this.label24);
+            this.groupBox7.Controls.Add(this.tbSchedService);
+            this.groupBox7.Location = new System.Drawing.Point(434, 5);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(306, 478);
+            this.groupBox7.TabIndex = 2;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Add schedule";
+            // 
+            // tbSchedService
+            // 
+            this.tbSchedService.Location = new System.Drawing.Point(78, 45);
+            this.tbSchedService.Name = "tbSchedService";
+            this.tbSchedService.Size = new System.Drawing.Size(100, 20);
+            this.tbSchedService.TabIndex = 0;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(17, 48);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(29, 13);
+            this.label24.TabIndex = 1;
+            this.label24.Text = "Serv";
+            // 
+            // btnCreateSchedule
+            // 
+            this.btnCreateSchedule.Location = new System.Drawing.Point(78, 249);
+            this.btnCreateSchedule.Name = "btnCreateSchedule";
+            this.btnCreateSchedule.Size = new System.Drawing.Size(200, 35);
+            this.btnCreateSchedule.TabIndex = 2;
+            this.btnCreateSchedule.Text = "Create";
+            this.btnCreateSchedule.UseVisualStyleBackColor = true;
+            this.btnCreateSchedule.Click += new System.EventHandler(this.btnCreateSchedule_Click);
+            // 
+            // dateSchedDay
+            // 
+            this.dateSchedDay.Location = new System.Drawing.Point(78, 137);
+            this.dateSchedDay.Name = "dateSchedDay";
+            this.dateSchedDay.Size = new System.Drawing.Size(200, 20);
+            this.dateSchedDay.TabIndex = 3;
+            // 
+            // dateSchedStime
+            // 
+            this.dateSchedStime.Location = new System.Drawing.Point(78, 174);
+            this.dateSchedStime.Name = "dateSchedStime";
+            this.dateSchedStime.Size = new System.Drawing.Size(200, 20);
+            this.dateSchedStime.TabIndex = 4;
+            // 
+            // dateSchedEtime
+            // 
+            this.dateSchedEtime.Location = new System.Drawing.Point(78, 208);
+            this.dateSchedEtime.Name = "dateSchedEtime";
+            this.dateSchedEtime.Size = new System.Drawing.Size(200, 20);
+            this.dateSchedEtime.TabIndex = 5;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(17, 78);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(33, 13);
+            this.label25.TabIndex = 7;
+            this.label25.Text = "Client";
+            // 
+            // tbSchedClient
+            // 
+            this.tbSchedClient.Location = new System.Drawing.Point(78, 71);
+            this.tbSchedClient.Name = "tbSchedClient";
+            this.tbSchedClient.Size = new System.Drawing.Size(100, 20);
+            this.tbSchedClient.TabIndex = 6;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(17, 214);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(32, 13);
+            this.label26.TabIndex = 8;
+            this.label26.Text = "etime";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(17, 180);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(31, 13);
+            this.label27.TabIndex = 9;
+            this.label27.Text = "stime";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(17, 144);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(26, 13);
+            this.label28.TabIndex = 10;
+            this.label28.Text = "Day";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(17, 104);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(35, 13);
+            this.label29.TabIndex = 12;
+            this.label29.Text = "Room";
+            // 
+            // tbSchedRoom
+            // 
+            this.tbSchedRoom.Location = new System.Drawing.Point(78, 97);
+            this.tbSchedRoom.Name = "tbSchedRoom";
+            this.tbSchedRoom.Size = new System.Drawing.Size(100, 20);
+            this.tbSchedRoom.TabIndex = 11;
             // 
             // Form1
             // 
@@ -560,12 +959,23 @@
             this.tabLogin.ResumeLayout(false);
             this.tabLogin.PerformLayout();
             this.tabStaffClient.ResumeLayout(false);
-            this.tabStaffClient.PerformLayout();
-            this.tabTrainer.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvShowClients)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.tabTrainer.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvShowSchedule)).EndInit();
             this.tabAdmin.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvShowEmployee)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -578,24 +988,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TabPage tabStaffClient;
         private System.Windows.Forms.TabPage tabTrainer;
         private System.Windows.Forms.TabPage tabAdmin;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.Button btnCreateClient;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox rbLastName;
-        private System.Windows.Forms.TextBox tbPatr;
-        private System.Windows.Forms.TextBox tbNumber;
-        private System.Windows.Forms.TextBox tbEmail;
-        private System.Windows.Forms.TextBox tbName;
-        private System.Windows.Forms.Button btnShowClients;
-        private System.Windows.Forms.DataGridView dgvShowClients;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnEmpCreate;
@@ -619,6 +1015,57 @@
         private System.Windows.Forms.TextBox tbEmpPatr;
         private System.Windows.Forms.TextBox tbEmpLname;
         private System.Windows.Forms.TextBox tbEmpFname;
+        private System.Windows.Forms.Button btnFireEmp;
+        private System.Windows.Forms.Button btnShowEmp;
+        private System.Windows.Forms.DataGridView dgvShowEmployee;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox tbEmpId;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Button btnAddServ;
+        private System.Windows.Forms.TextBox tbServName;
+        private System.Windows.Forms.TabPage tabStaffClient;
+        private System.Windows.Forms.Button btnShowClients;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.DataGridView dgvShowClients;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.TextBox tbSubCliId;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TextBox tbName;
+        private System.Windows.Forms.Button btnCreateClient;
+        private System.Windows.Forms.TextBox tbEmail;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox tbNumber;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox tbPatr;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox rbLastName;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnCreateSub;
+        private System.Windows.Forms.ComboBox comboSubType;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.DateTimePicker dateSubExp;
+        private System.Windows.Forms.DateTimePicker dateSubIss;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Button bnShowSchedule;
+        private System.Windows.Forms.DataGridView dgvShowSchedule;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.TextBox tbSchedRoom;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox tbSchedClient;
+        private System.Windows.Forms.DateTimePicker dateSchedEtime;
+        private System.Windows.Forms.DateTimePicker dateSchedStime;
+        private System.Windows.Forms.DateTimePicker dateSchedDay;
+        private System.Windows.Forms.Button btnCreateSchedule;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox tbSchedService;
     }
 }
 
