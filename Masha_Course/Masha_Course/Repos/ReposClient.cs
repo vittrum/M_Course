@@ -45,7 +45,7 @@ namespace Masha_Course.Repos {
         public void AddClient(string name, string lname, string patr, string phone, string mail) {
             try {
                 string QueryString =
-                    "select add_client (@name, @lname, @patr, @phone, @mail);";
+                    "select create_client (@name, @lname, @patr, @phone, @mail);";
                 NpgsqlCommand Command =
                     new NpgsqlCommand(QueryString, connection.CreateConnection.connection);
                 Command.Parameters.AddWithValue("@name", name); // Подстановка в строку значений

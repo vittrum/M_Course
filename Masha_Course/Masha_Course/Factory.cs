@@ -19,6 +19,7 @@ namespace Masha_Course {
         public ReposSubType type { get; }
         public ReposSubscription sub { get; }
         public ReposSchedule schedule { get; }
+        public Login login { get; }
 
         public Factory(string server, string port, string user, string pass, string dbname) {
             string ConnectionString = "Server=" + server + "; Port=" + port + "; User Id=" + user + "; Password=" + pass + "; Database=" + dbname + ";";
@@ -32,6 +33,8 @@ namespace Masha_Course {
             type = new ReposSubType(connection);
             sub = new ReposSubscription(connection);
             schedule = new ReposSchedule(connection);
+            login = new Login(connection);
+
         }
 
         private bool Disposed = false;

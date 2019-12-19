@@ -8,8 +8,11 @@ using System.Windows.Forms;
 namespace Masha_Course {
     class Request {
         // Presenter
-        public void Create_Client() {
-
+        public string Check_Role(Factory factory, string login) {
+            return factory.login.Check_Role(login);
+        }
+        public void Create_Client(Factory factory, string name, string lname, string patr, string phone, string mail) {
+            factory.client.AddClient(name, lname, patr, phone, mail);
         }
         // Показать клиентов
         public void Show_Client(Factory factory, DataGridView dgv) {
@@ -42,6 +45,10 @@ namespace Masha_Course {
         public void Show_Schedule(Factory factory, DataGridView dgv) {
             foreach (var i in factory.schedule.Show_Schedules())
                 dgv.Rows.Add(i.Name, i.Lname, i.Day, i.Stime, i.Etime, i.Serv, i.Type);
+        }
+        public void Create_Schedule(Factory factory, string serv, string cli, string room,
+            string day, string stime, string etime) {
+            factory.schedule.Create_Schedule(serv, cli, room, day, stime, etime);
         }
         //public void Cre
         #region ComboFill

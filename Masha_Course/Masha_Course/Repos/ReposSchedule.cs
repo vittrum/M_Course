@@ -15,6 +15,30 @@ namespace Masha_Course.Repos {
             this.connection = connection;
         }
 
+        public void Create_Schedule(string serv, string cli, string room, string day,
+            string stime, string etime) {
+            try {
+                string QueryString = "select create_schedule(@serv, @cli, @room, @day, '" + stime + "','" + etime + "');";
+                MessageBox.Show(etime);
+                NpgsqlCommand Command =
+                    new NpgsqlCommand(QueryString, connection.CreateConnection.connection);
+                Command.Parameters.AddWithValue("@cli", Convert.ToInt32(cli));
+                Command.Parameters.AddWithValue("@serv", Convert.ToInt32(serv));
+                Command.Parameters.AddWithValue("@room", Convert.ToInt32(room));
+                Command.Parameters.AddWithValue("@day", day);
+
+                try {
+                    Command.ExecuteNonQuery();
+                }
+                catch (Exception e) {
+                    MessageBox.Show("Ошибка выполнения операции. \nПроверьте корректность введенных данных" + e.ToString());
+                }
+            }
+            catch (Exception e) {
+                MessageBox.Show("Ошибка выполнения операции." + e.ToString());
+            }
+        }
+
         public List<Schedule> Show_Schedules() {
             Schedule schedule;
             List<Schedule> schedules = new List<Schedule>();

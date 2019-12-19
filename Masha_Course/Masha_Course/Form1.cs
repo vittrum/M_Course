@@ -14,11 +14,17 @@ namespace Masha_Course {
             InitializeComponent();
             requester.FillPositions(factory, comboEmpPos);
             requester.FillSubTypes(factory, comboSubType);
+            dateSchedEtime.Format = DateTimePickerFormat.Time;
+            dateSchedEtime.ShowUpDown = true;
+            dateSchedStime.Format = DateTimePickerFormat.Time;
+            dateSchedStime.ShowUpDown = true;
+
         }
         Request requester = new Request();
         Factory factory = new Factory("127.0.0.1", "5432", "postgres", "1", "masha");
         private void BtnCreateClient_Click(object sender, EventArgs e) {
-            requester.Create_Client();
+            requester.Create_Client(factory, tbName.Text, tbLastName.Text, tbPatr.Text,
+                tbNumber.Text, tbEmail.Text);
         }
         
         #region Filler
@@ -94,7 +100,36 @@ namespace Masha_Course {
         }
 
         private void btnCreateSchedule_Click(object sender, EventArgs e) {
+            requester.Create_Schedule(factory, tbSchedService.Text, tbSchedClient.Text, tbSchedRoom.Text,
+                comboDays.SelectedItem.ToString(), dateSchedStime.Value.ToString(), dateSchedEtime.Value.ToString());
+        }
 
+        private void btnLogin_Click(object sender, EventArgs e) {
+
+            string login = TbLogin.Text;
+            string pass = TbPass.Text;
+            string role = "";
+            bool success = true;
+            try 
+            {
+                factory = new Factory("127.0.0.1", "5432", login, pass, "masha");
+                role = requester.Check_Role(factory, login);
+                MessageBox.Show(role); 
+            }
+            catch (Exception ex) {
+                success = false;
+                MessageBox.Show("Проверьте соединение и корректность введенных данных" + ex.Message);
+            }
+            if (success) {
+                tabControl.Visible = true;
+                panelLogin.Dispose();
+                if (role == "trainers") {
+                    tabControl.TabPages["tabAdmin"].Dispose();
+                }
+                if (role == "administrators") {
+                    tabControl.TabPages["tabTrainer"].Dispose();
+                }
+            }
         }
     }
 }

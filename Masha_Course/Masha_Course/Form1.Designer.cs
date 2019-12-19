@@ -23,13 +23,7 @@
         /// содержимое этого метода с помощью редактора кода.
         /// </summary>
         private void InitializeComponent() {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabLogin = new System.Windows.Forms.TabPage();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tabControl = new System.Windows.Forms.TabControl();
             this.tabStaffClient = new System.Windows.Forms.TabPage();
             this.btnShowClients = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
@@ -53,10 +47,23 @@
             this.label7 = new System.Windows.Forms.Label();
             this.tbPatr = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.rbLastName = new System.Windows.Forms.TextBox();
+            this.tbLastName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tabTrainer = new System.Windows.Forms.TabPage();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.tbSchedRoom = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.tbSchedClient = new System.Windows.Forms.TextBox();
+            this.dateSchedEtime = new System.Windows.Forms.DateTimePicker();
+            this.dateSchedStime = new System.Windows.Forms.DateTimePicker();
+            this.btnCreateSchedule = new System.Windows.Forms.Button();
+            this.label24 = new System.Windows.Forms.Label();
+            this.tbSchedService = new System.Windows.Forms.TextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.bnShowSchedule = new System.Windows.Forms.Button();
             this.dgvShowSchedule = new System.Windows.Forms.DataGridView();
@@ -92,113 +99,42 @@
             this.tbEmpPatr = new System.Windows.Forms.TextBox();
             this.tbEmpLname = new System.Windows.Forms.TextBox();
             this.tbEmpFname = new System.Windows.Forms.TextBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.tbSchedService = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.btnCreateSchedule = new System.Windows.Forms.Button();
-            this.dateSchedDay = new System.Windows.Forms.DateTimePicker();
-            this.dateSchedStime = new System.Windows.Forms.DateTimePicker();
-            this.dateSchedEtime = new System.Windows.Forms.DateTimePicker();
-            this.label25 = new System.Windows.Forms.Label();
-            this.tbSchedClient = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.tbSchedRoom = new System.Windows.Forms.TextBox();
-            this.tabControl1.SuspendLayout();
-            this.tabLogin.SuspendLayout();
+            this.panelLogin = new System.Windows.Forms.Panel();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.TbPass = new System.Windows.Forms.TextBox();
+            this.TbLogin = new System.Windows.Forms.TextBox();
+            this.comboDays = new System.Windows.Forms.ComboBox();
+            this.tabControl.SuspendLayout();
             this.tabStaffClient.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvShowClients)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.tabTrainer.SuspendLayout();
+            this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvShowSchedule)).BeginInit();
             this.tabAdmin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvShowEmployee)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.groupBox7.SuspendLayout();
+            this.panelLogin.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // tabControl
             // 
-            this.tabControl1.Controls.Add(this.tabLogin);
-            this.tabControl1.Controls.Add(this.tabStaffClient);
-            this.tabControl1.Controls.Add(this.tabTrainer);
-            this.tabControl1.Controls.Add(this.tabAdmin);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(9, 9);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(959, 609);
-            this.tabControl1.TabIndex = 0;
-            // 
-            // tabLogin
-            // 
-            this.tabLogin.Controls.Add(this.btnLogin);
-            this.tabLogin.Controls.Add(this.label3);
-            this.tabLogin.Controls.Add(this.label2);
-            this.tabLogin.Controls.Add(this.textBox3);
-            this.tabLogin.Controls.Add(this.textBox1);
-            this.tabLogin.Location = new System.Drawing.Point(4, 22);
-            this.tabLogin.Margin = new System.Windows.Forms.Padding(2);
-            this.tabLogin.Name = "tabLogin";
-            this.tabLogin.Padding = new System.Windows.Forms.Padding(2);
-            this.tabLogin.Size = new System.Drawing.Size(951, 583);
-            this.tabLogin.TabIndex = 0;
-            this.tabLogin.Text = "Login";
-            this.tabLogin.UseVisualStyleBackColor = true;
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.Location = new System.Drawing.Point(71, 104);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(144, 27);
-            this.btnLogin.TabIndex = 6;
-            this.btnLogin.Text = "войти";
-            this.btnLogin.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(4, 44);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Логин";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(4, 72);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Пороль";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(71, 68);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(144, 20);
-            this.textBox3.TabIndex = 2;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(71, 44);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(144, 20);
-            this.textBox1.TabIndex = 0;
+            this.tabControl.Controls.Add(this.tabStaffClient);
+            this.tabControl.Controls.Add(this.tabTrainer);
+            this.tabControl.Controls.Add(this.tabAdmin);
+            this.tabControl.Location = new System.Drawing.Point(11, 11);
+            this.tabControl.Margin = new System.Windows.Forms.Padding(2);
+            this.tabControl.Name = "tabControl";
+            this.tabControl.SelectedIndex = 0;
+            this.tabControl.Size = new System.Drawing.Size(957, 598);
+            this.tabControl.TabIndex = 0;
+            this.tabControl.Visible = false;
             // 
             // tabStaffClient
             // 
@@ -210,7 +146,7 @@
             this.tabStaffClient.Margin = new System.Windows.Forms.Padding(2);
             this.tabStaffClient.Name = "tabStaffClient";
             this.tabStaffClient.Padding = new System.Windows.Forms.Padding(2);
-            this.tabStaffClient.Size = new System.Drawing.Size(951, 583);
+            this.tabStaffClient.Size = new System.Drawing.Size(949, 572);
             this.tabStaffClient.TabIndex = 1;
             this.tabStaffClient.Text = "Client";
             this.tabStaffClient.UseVisualStyleBackColor = true;
@@ -353,7 +289,7 @@
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.tbPatr);
             this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.rbLastName);
+            this.groupBox3.Controls.Add(this.tbLastName);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Location = new System.Drawing.Point(5, 5);
@@ -436,13 +372,13 @@
             this.label6.TabIndex = 7;
             this.label6.Text = "Number";
             // 
-            // rbLastName
+            // tbLastName
             // 
-            this.rbLastName.Location = new System.Drawing.Point(116, 77);
-            this.rbLastName.Margin = new System.Windows.Forms.Padding(2);
-            this.rbLastName.Name = "rbLastName";
-            this.rbLastName.Size = new System.Drawing.Size(125, 20);
-            this.rbLastName.TabIndex = 4;
+            this.tbLastName.Location = new System.Drawing.Point(116, 77);
+            this.tbLastName.Margin = new System.Windows.Forms.Padding(2);
+            this.tbLastName.Name = "tbLastName";
+            this.tbLastName.Size = new System.Drawing.Size(125, 20);
+            this.tbLastName.TabIndex = 4;
             // 
             // label5
             // 
@@ -472,10 +408,131 @@
             this.tabTrainer.Margin = new System.Windows.Forms.Padding(2);
             this.tabTrainer.Name = "tabTrainer";
             this.tabTrainer.Padding = new System.Windows.Forms.Padding(2);
-            this.tabTrainer.Size = new System.Drawing.Size(951, 583);
+            this.tabTrainer.Size = new System.Drawing.Size(949, 572);
             this.tabTrainer.TabIndex = 2;
             this.tabTrainer.Text = "Trainer";
             this.tabTrainer.UseVisualStyleBackColor = true;
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.comboDays);
+            this.groupBox7.Controls.Add(this.label29);
+            this.groupBox7.Controls.Add(this.tbSchedRoom);
+            this.groupBox7.Controls.Add(this.label28);
+            this.groupBox7.Controls.Add(this.label27);
+            this.groupBox7.Controls.Add(this.label26);
+            this.groupBox7.Controls.Add(this.label25);
+            this.groupBox7.Controls.Add(this.tbSchedClient);
+            this.groupBox7.Controls.Add(this.dateSchedEtime);
+            this.groupBox7.Controls.Add(this.dateSchedStime);
+            this.groupBox7.Controls.Add(this.btnCreateSchedule);
+            this.groupBox7.Controls.Add(this.label24);
+            this.groupBox7.Controls.Add(this.tbSchedService);
+            this.groupBox7.Location = new System.Drawing.Point(434, 5);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(306, 478);
+            this.groupBox7.TabIndex = 2;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Add schedule";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(17, 104);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(35, 13);
+            this.label29.TabIndex = 12;
+            this.label29.Text = "Room";
+            // 
+            // tbSchedRoom
+            // 
+            this.tbSchedRoom.Location = new System.Drawing.Point(78, 97);
+            this.tbSchedRoom.Name = "tbSchedRoom";
+            this.tbSchedRoom.Size = new System.Drawing.Size(100, 20);
+            this.tbSchedRoom.TabIndex = 11;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(17, 144);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(26, 13);
+            this.label28.TabIndex = 10;
+            this.label28.Text = "Day";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(17, 180);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(31, 13);
+            this.label27.TabIndex = 9;
+            this.label27.Text = "stime";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(17, 214);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(32, 13);
+            this.label26.TabIndex = 8;
+            this.label26.Text = "etime";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(17, 78);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(33, 13);
+            this.label25.TabIndex = 7;
+            this.label25.Text = "Client";
+            // 
+            // tbSchedClient
+            // 
+            this.tbSchedClient.Location = new System.Drawing.Point(78, 71);
+            this.tbSchedClient.Name = "tbSchedClient";
+            this.tbSchedClient.Size = new System.Drawing.Size(100, 20);
+            this.tbSchedClient.TabIndex = 6;
+            // 
+            // dateSchedEtime
+            // 
+            this.dateSchedEtime.Location = new System.Drawing.Point(78, 208);
+            this.dateSchedEtime.Name = "dateSchedEtime";
+            this.dateSchedEtime.Size = new System.Drawing.Size(200, 20);
+            this.dateSchedEtime.TabIndex = 5;
+            // 
+            // dateSchedStime
+            // 
+            this.dateSchedStime.Location = new System.Drawing.Point(78, 174);
+            this.dateSchedStime.Name = "dateSchedStime";
+            this.dateSchedStime.Size = new System.Drawing.Size(200, 20);
+            this.dateSchedStime.TabIndex = 4;
+            // 
+            // btnCreateSchedule
+            // 
+            this.btnCreateSchedule.Location = new System.Drawing.Point(78, 249);
+            this.btnCreateSchedule.Name = "btnCreateSchedule";
+            this.btnCreateSchedule.Size = new System.Drawing.Size(200, 35);
+            this.btnCreateSchedule.TabIndex = 2;
+            this.btnCreateSchedule.Text = "Create";
+            this.btnCreateSchedule.UseVisualStyleBackColor = true;
+            this.btnCreateSchedule.Click += new System.EventHandler(this.btnCreateSchedule_Click);
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(17, 48);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(29, 13);
+            this.label24.TabIndex = 1;
+            this.label24.Text = "Serv";
+            // 
+            // tbSchedService
+            // 
+            this.tbSchedService.Location = new System.Drawing.Point(78, 45);
+            this.tbSchedService.Name = "tbSchedService";
+            this.tbSchedService.Size = new System.Drawing.Size(100, 20);
+            this.tbSchedService.TabIndex = 0;
             // 
             // groupBox6
             // 
@@ -517,7 +574,7 @@
             this.tabAdmin.Margin = new System.Windows.Forms.Padding(2);
             this.tabAdmin.Name = "tabAdmin";
             this.tabAdmin.Padding = new System.Windows.Forms.Padding(2);
-            this.tabAdmin.Size = new System.Drawing.Size(951, 583);
+            this.tabAdmin.Size = new System.Drawing.Size(949, 572);
             this.tabAdmin.TabIndex = 3;
             this.tabAdmin.Text = "Admin";
             this.tabAdmin.UseVisualStyleBackColor = true;
@@ -807,157 +864,93 @@
             this.tbEmpFname.Size = new System.Drawing.Size(100, 20);
             this.tbEmpFname.TabIndex = 0;
             // 
-            // tabPage3
+            // panelLogin
             // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage3.Size = new System.Drawing.Size(951, 583);
-            this.tabPage3.TabIndex = 4;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.panelLogin.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panelLogin.Controls.Add(this.btnLogin);
+            this.panelLogin.Controls.Add(this.label3);
+            this.panelLogin.Controls.Add(this.label2);
+            this.panelLogin.Controls.Add(this.TbPass);
+            this.panelLogin.Controls.Add(this.TbLogin);
+            this.panelLogin.Location = new System.Drawing.Point(233, 43);
+            this.panelLogin.Name = "panelLogin";
+            this.panelLogin.Size = new System.Drawing.Size(530, 459);
+            this.panelLogin.TabIndex = 1;
             // 
-            // groupBox7
+            // btnLogin
             // 
-            this.groupBox7.Controls.Add(this.label29);
-            this.groupBox7.Controls.Add(this.tbSchedRoom);
-            this.groupBox7.Controls.Add(this.label28);
-            this.groupBox7.Controls.Add(this.label27);
-            this.groupBox7.Controls.Add(this.label26);
-            this.groupBox7.Controls.Add(this.label25);
-            this.groupBox7.Controls.Add(this.tbSchedClient);
-            this.groupBox7.Controls.Add(this.dateSchedEtime);
-            this.groupBox7.Controls.Add(this.dateSchedStime);
-            this.groupBox7.Controls.Add(this.dateSchedDay);
-            this.groupBox7.Controls.Add(this.btnCreateSchedule);
-            this.groupBox7.Controls.Add(this.label24);
-            this.groupBox7.Controls.Add(this.tbSchedService);
-            this.groupBox7.Location = new System.Drawing.Point(434, 5);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(306, 478);
-            this.groupBox7.TabIndex = 2;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Add schedule";
+            this.btnLogin.Location = new System.Drawing.Point(148, 226);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(208, 27);
+            this.btnLogin.TabIndex = 11;
+            this.btnLogin.Text = "войти";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // tbSchedService
+            // label3
             // 
-            this.tbSchedService.Location = new System.Drawing.Point(78, 45);
-            this.tbSchedService.Name = "tbSchedService";
-            this.tbSchedService.Size = new System.Drawing.Size(100, 20);
-            this.tbSchedService.TabIndex = 0;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(145, 178);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(38, 13);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Логин";
             // 
-            // label24
+            // label2
             // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(17, 48);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(29, 13);
-            this.label24.TabIndex = 1;
-            this.label24.Text = "Serv";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(145, 206);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 13);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Пороль";
             // 
-            // btnCreateSchedule
+            // TbPass
             // 
-            this.btnCreateSchedule.Location = new System.Drawing.Point(78, 249);
-            this.btnCreateSchedule.Name = "btnCreateSchedule";
-            this.btnCreateSchedule.Size = new System.Drawing.Size(200, 35);
-            this.btnCreateSchedule.TabIndex = 2;
-            this.btnCreateSchedule.Text = "Create";
-            this.btnCreateSchedule.UseVisualStyleBackColor = true;
-            this.btnCreateSchedule.Click += new System.EventHandler(this.btnCreateSchedule_Click);
+            this.TbPass.Location = new System.Drawing.Point(212, 202);
+            this.TbPass.Margin = new System.Windows.Forms.Padding(2);
+            this.TbPass.Name = "TbPass";
+            this.TbPass.Size = new System.Drawing.Size(144, 20);
+            this.TbPass.TabIndex = 8;
             // 
-            // dateSchedDay
+            // TbLogin
             // 
-            this.dateSchedDay.Location = new System.Drawing.Point(78, 137);
-            this.dateSchedDay.Name = "dateSchedDay";
-            this.dateSchedDay.Size = new System.Drawing.Size(200, 20);
-            this.dateSchedDay.TabIndex = 3;
+            this.TbLogin.Location = new System.Drawing.Point(212, 178);
+            this.TbLogin.Margin = new System.Windows.Forms.Padding(2);
+            this.TbLogin.Name = "TbLogin";
+            this.TbLogin.Size = new System.Drawing.Size(144, 20);
+            this.TbLogin.TabIndex = 7;
             // 
-            // dateSchedStime
+            // comboDays
             // 
-            this.dateSchedStime.Location = new System.Drawing.Point(78, 174);
-            this.dateSchedStime.Name = "dateSchedStime";
-            this.dateSchedStime.Size = new System.Drawing.Size(200, 20);
-            this.dateSchedStime.TabIndex = 4;
-            // 
-            // dateSchedEtime
-            // 
-            this.dateSchedEtime.Location = new System.Drawing.Point(78, 208);
-            this.dateSchedEtime.Name = "dateSchedEtime";
-            this.dateSchedEtime.Size = new System.Drawing.Size(200, 20);
-            this.dateSchedEtime.TabIndex = 5;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(17, 78);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(33, 13);
-            this.label25.TabIndex = 7;
-            this.label25.Text = "Client";
-            // 
-            // tbSchedClient
-            // 
-            this.tbSchedClient.Location = new System.Drawing.Point(78, 71);
-            this.tbSchedClient.Name = "tbSchedClient";
-            this.tbSchedClient.Size = new System.Drawing.Size(100, 20);
-            this.tbSchedClient.TabIndex = 6;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(17, 214);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(32, 13);
-            this.label26.TabIndex = 8;
-            this.label26.Text = "etime";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(17, 180);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(31, 13);
-            this.label27.TabIndex = 9;
-            this.label27.Text = "stime";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(17, 144);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(26, 13);
-            this.label28.TabIndex = 10;
-            this.label28.Text = "Day";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(17, 104);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(35, 13);
-            this.label29.TabIndex = 12;
-            this.label29.Text = "Room";
-            // 
-            // tbSchedRoom
-            // 
-            this.tbSchedRoom.Location = new System.Drawing.Point(78, 97);
-            this.tbSchedRoom.Name = "tbSchedRoom";
-            this.tbSchedRoom.Size = new System.Drawing.Size(100, 20);
-            this.tbSchedRoom.TabIndex = 11;
+            this.comboDays.FormattingEnabled = true;
+            this.comboDays.Items.AddRange(new object[] {
+            "Понедельник",
+            "Вторник",
+            "Среда",
+            "Четверг",
+            "Пятница",
+            "Суббота",
+            "Воскресенье"});
+            this.comboDays.Location = new System.Drawing.Point(78, 141);
+            this.comboDays.Name = "comboDays";
+            this.comboDays.Size = new System.Drawing.Size(121, 21);
+            this.comboDays.TabIndex = 13;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(979, 620);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tabControl);
+            this.Controls.Add(this.panelLogin);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.tabControl1.ResumeLayout(false);
-            this.tabLogin.ResumeLayout(false);
-            this.tabLogin.PerformLayout();
+            this.tabControl.ResumeLayout(false);
             this.tabStaffClient.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvShowClients)).EndInit();
@@ -966,6 +959,8 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.tabTrainer.ResumeLayout(false);
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvShowSchedule)).EndInit();
             this.tabAdmin.ResumeLayout(false);
@@ -974,24 +969,17 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
+            this.panelLogin.ResumeLayout(false);
+            this.panelLogin.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabLogin;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.TabPage tabTrainer;
         private System.Windows.Forms.TabPage tabAdmin;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnEmpCreate;
@@ -1039,7 +1027,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tbPatr;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox rbLastName;
+        private System.Windows.Forms.TextBox tbLastName;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnCreateSub;
@@ -1062,10 +1050,16 @@
         private System.Windows.Forms.TextBox tbSchedClient;
         private System.Windows.Forms.DateTimePicker dateSchedEtime;
         private System.Windows.Forms.DateTimePicker dateSchedStime;
-        private System.Windows.Forms.DateTimePicker dateSchedDay;
         private System.Windows.Forms.Button btnCreateSchedule;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.TextBox tbSchedService;
+        private System.Windows.Forms.Panel panelLogin;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox TbPass;
+        private System.Windows.Forms.TextBox TbLogin;
+        private System.Windows.Forms.ComboBox comboDays;
     }
 }
 
