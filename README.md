@@ -1,1 +1,2 @@
-# M_Course
+# Database support for the gym
+
